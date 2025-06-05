@@ -67,6 +67,6 @@ This project demonstrates how to build a powerful AI-powered web application usi
 
 ## Code & Resources:
 - GitHub Repo: [genai_mern_project](https://github.com/Elakstein/CodeFixer/)
-- Gemini API Docs: [Groq API Docs](https://ai.google.dev/gemini-api/docs)
+- Gemini API Docs: [Gemini API Docs](https://ai.google.dev/gemini-api/docs)
 - Node.js Docs: [Node.js Docs](https://nodejs.org/en)
 - Tailwind CSS Docs: [Tailwind CSS Docs](https://v3.tailwindcss.com/docs/guides/vite)
