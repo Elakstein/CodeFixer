@@ -1,0 +1,20 @@
+{
+  "name": "code-reviewer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:frontend": "cd Frontend &&  npm run dev",
+    "start:backend": "cd Backend && npx nodemon",
+    "dev": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "remark-gfm": "^4.0.1"
+  }
+}

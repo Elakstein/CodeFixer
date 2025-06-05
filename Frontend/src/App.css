@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom resets */
+* {
+  @apply m-0 p-0 box-border;
+}
+
+html, body, #root {
+  @apply h-full w-full;
+}
+
+/* Layout for main container */
+main {
+  @apply h-full w-full p-4 flex gap-4;
+}
+
+/* Shared styles for left & right */
+main .left, main .right {
+  @apply h-full rounded-lg;
+  flex-basis: 50%;
+}
+
+/* Left section */
+
+main .left {
+  @apply w-6/12 bg-black relative bg-[#343434]  flex flex-col gap-4 p-4 border-r border-solid select-none;
+}
+
+
+.left .code,
+.code pre,
+.code pre code {
+  @apply h-full w-full m-0 rounded-lg overflow-auto;
+  background-color: #0c0c0c;  /* custom shade, not in Tailwind defaults */
+}
+
+main .left .review {
+  @apply absolute top-4 right-4 text-black px-8 py-2 font-medium cursor-pointer select-none rounded-lg;
+  background-color: rgb(117, 202, 230); /* custom color */
+}
+
+/* Right section */
+main .right {
+  @apply bg-[#343434] p-4 text-base overflow-auto;
+}
+
+main .right pre {
+  @apply text-white p-4 rounded-lg mb-4 font-mono text-sm whitespace-pre-wrap overflow-x-auto;
+  background-color: #25292a; /* custom color */
+}
+
+main .right code {
+  @apply text-white font-mono;
+}
+
+
+
+/* Header section */
+.left-header {
+  @apply flex items-center gap-4;
+}
+.left-header h2 {
+  @apply text-2xl m-0;
+}
+
+.file-input {
+  @apply text-sm text-gray-400 cursor-pointer bg-gray-700  p-2 rounded-lg select-none;
+}
