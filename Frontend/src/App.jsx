@@ -49,7 +49,7 @@ function App() {
         id="fileUpload"
         accept=".js, .py, .css, .cpp, .cs, .ts, .html, .json, .java"
         onChange={handleFileUpload}
-        class="file-input"
+        className="file-input"
       />
         </div>
 
@@ -62,10 +62,6 @@ function App() {
               style={{
                 fontFamily: '"Fira code", "Fira Mono", monospace',
                 fontSize: 16,
-                border: "1px solid #ddd",
-                borderRadius: "5px",
-                height: "100%",
-                width: "100%"
               }}
             />
         </div>
